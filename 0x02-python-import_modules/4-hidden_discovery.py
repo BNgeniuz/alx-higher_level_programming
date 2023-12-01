@@ -1,8 +1,13 @@
 #!/usr/bin/python3
+import hidden_4
+import sys
+import os
+
+folder_path = os.path.join(os.path.expanduser("~"), "Desktop", "hidden_4_F")
+
+sys.path.append(folder_path)
 
 if __name__ == "__main__":
-
-    import hidden_4
 
     names = dir(hidden_4)
     for name in names:
