@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-if __name__ == "__main__":
-    import sys
+import sys
 
+if __name__ == "__main__":
     read = len(sys.argv) - 1
     if read == 0:
         print("0 arguments.")
@@ -9,5 +9,5 @@ if __name__ == "__main__":
         print("1 argument:")
     else:
         print("{} arguments:".format(read))
-        for j in range(read):
-            print("{}: {}".format(j + 1, sys.argv[j + 1]))
+    for j in range(read):
+        print("{}: {}".format(j + 1, sys.argv[j + 1]))
