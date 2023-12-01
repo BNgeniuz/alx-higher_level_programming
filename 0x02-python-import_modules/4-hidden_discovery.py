@@ -1,15 +1,8 @@
 #!/usr/bin/python3
 import hidden_4
-import sys
-import os
-
-folder_path = os.path.join(os.path.expanduser("~"), "Desktop", "hidden_4_F")
-
-sys.path.append(folder_path)
 
 if __name__ == "__main__":
 
-    names = dir(hidden_4)
-    for name in names:
-        if name in names[:2] != "__":
-            print(name)
+    for j in dir(hidden_4):
+        if j[:2] != "__"
+        print(j)
