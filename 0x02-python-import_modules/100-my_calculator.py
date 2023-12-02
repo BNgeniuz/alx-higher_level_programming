@@ -7,20 +7,20 @@ if __name__ == "__main__":
         print("Usage: {} <a> <operator> <b>".format(argv[0]))
         exit(1)
 
-        oprt = argv[2]
+        operator = argv[2]
         a = int(argv[1])
         b = int(argv[3])
 
-        if oprt == '+':
-            outcome = add(a, b)
-        elif oprt == "-":
-            outcome = sub(a, b)
-        elif oprt == "*":
-            outcome = mul(a, b)
-        elif oprt == '/':
-            outcome = div(a, b)
+        if operator == '+':
+            result = add(a, b)
+        elif operator == "-":
+            result = sub(a, b)
+        elif operator == "*":
+            result = mul(a, b)
+        elif operator == '/':
+            result = div(a, b)
         else:
             print("Unknown operator: Available operators: +, -, *, and /")
             exit(1)
 
-            print("{} {} {} = {}".format(oprt, a, b, outcome))
+            print("{} {} {} = {}".format(operator, a, b, result))
