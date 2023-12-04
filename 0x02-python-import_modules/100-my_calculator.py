@@ -13,8 +13,8 @@ if __name__ == "__main__":
         sys.exit(1)
 
         from calculator_1 import add, sub, mul, div
-        a = int(argv[1])
-        b = int(argv[3])
+        a = int(sys.argv[1])
+        b = int(sys.argv[3])
 
         if oprt == '+':
             print("{} + {} = {}".format(a, b, add(a, b)))
