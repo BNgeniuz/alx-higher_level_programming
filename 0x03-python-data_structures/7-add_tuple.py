@@ -1,28 +1,28 @@
 #!/usr/bin/python3
 def add_tuple(tuple_a=(), tuple_b=()):
-    length_a = len(tuple_a)
-    length_b = len(tuple_b)
+    len_a = len(tuple_a)
+    len_b = len(tuple_b)
 
-    if length_a == 0:
-        a1 = 0
-        a2 = 0
-    elif length_a == 1:
-        a1 = tuple_a[0]
-        a2 = 0
+    if len_a == 0:
+        nt1 = 0
+        nt2 = 0
+    elif len_a == 1:
+        nt1 = tuple_a[0]
+        nt2 = 0
     else:
-        a1 = tuple_a[0]
-        a2 = tuple_a[1]
+        nt1 = tuple_a[0]
+        nt2 = tuple_a[1]
 
-    if length_b == 0:
-        b1 = 0
-        b2 = 0
-    elif length_b == 1:
-        b1 = tuple_b[0]
-        b2 = 0
+    if len_b == 0:
+        lt1 = 0
+        lt2 = 0
+    elif len_b == 1:
+        lt1 = tuple_b[0]
+        lt2 = 0
     else:
-        b1 = tuple_b[0]
-        b2 = tuple_b[1]
+        lt1 = tuple_b[0]
+        lt2 = tuple_b[1]
 
-    new_tuple = (a1 + b1, a2 +b2)
+    new_tuple = (nt1 + lt1, nt2 + lt2)
 
     return (new_tuple)
