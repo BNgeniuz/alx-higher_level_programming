@@ -1,4 +1,4 @@
-#!/usr/bin/work
+#!/usr/bin/python3
 """Square class defination."""
 
 
