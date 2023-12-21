@@ -1,5 +1,9 @@
 #!/usr/bin/work
+"""Square class defination."""
+
+
 class Square:
+    """Square class body."""
 
     def __init__(self, size=0):
         """Square contructor.
@@ -13,5 +17,5 @@ class Square:
         self.__size = size
 
     def area(self):
-
+        """Return the new area of the square."""
         return (self.__size * self.__size)
