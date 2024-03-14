@@ -1,4 +1,5 @@
 #!/usr/bin/node
+/* learning increment object */
 const myObject = {
   type: 'object',
   value: 12
