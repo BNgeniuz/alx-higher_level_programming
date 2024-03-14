@@ -4,17 +4,12 @@
 
 const dict = require('./101-data').dict;
 
-const totalist = Object.entries(dict);
-const vals = Object.values(dict);
-const valsUniq = [...new Set(vals)];
-const newDict = {};
-for (const j in valsUniq) {
-  const list = [];
-  for (const k in totalist) {
-    if (totalist[k][1] === valsUniq[j]) {
-      list.unshift(totalist[k][0]);
-    }
+const dictnew = {};
+for (const m in dict) {
+  if (dict[m] in dictnew) {
+    dictnew[dict[m]].push(m);
+  } else {
+    dictnew[dict[m]] = [m];
   }
-  newDict[valsUniq[j]] = list;
 }
-console.log(newDict);
+console.log(dictnew);
