@@ -1,4 +1,7 @@
 #!/usr/bin/node
+
+/* script that imports a dictionary of occurrences */
+
 const dict = require('./101-data').dict;
 
 const totalist = Object.entries(dict);

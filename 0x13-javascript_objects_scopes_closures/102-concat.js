@@ -1,4 +1,7 @@
 #!/usr/bin/node
+
+/* script that concats 2 files */
+
 const fs = require('fs');
 
 const fArg = fs.readFileSync(process.argv[2]).toString();
