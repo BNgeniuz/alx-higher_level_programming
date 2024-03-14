@@ -1,6 +1,7 @@
 #!/usr/bin/node
 
 /* how to pass an arguments in java */
+
 const args = process.argv;
 if (args.length === 2) {
   console.log('No argument');
