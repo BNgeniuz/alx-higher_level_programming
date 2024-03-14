@@ -1,4 +1,8 @@
 #!/usr/bin/node
+
+/* script that searches the second biggest
+ * integer in the list of arguments */
+
 const args = process.argv.slice(2);
 
 if (args.length < 2) {
