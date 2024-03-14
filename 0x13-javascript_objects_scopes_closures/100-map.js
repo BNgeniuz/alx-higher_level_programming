@@ -1,7 +1,6 @@
 #!/usr/bin/node
 
-/* script that imports an array
- * and computes a new array */
+/* script that imports an array */
 
 const list = require('./100-data').list;
 console.log(list);
