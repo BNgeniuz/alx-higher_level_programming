@@ -1,18 +1,14 @@
 #!/usr/bin/node
 
+// Import the 'request' module.
 const request = require('request');
 
-const url = process.argv[2];
+// Construct the URL for the specific Star Wars film
+const url = 'https://swapi-api.alx-tools.com/api/films/' + process.argv[2];
 
-request.get(url, (error, response, body) => {
-  if (error) {
-    console.error(error);
-  } else if (response.statusCode !== 200) {
-    console.error(`Error: ${response.statusCode} - ${response.statusMessage}`);
-  } else {
-    const films = JSON.parse(body).results;
-    const characterId = '18';
-    const count = films.filter(film => film.characters.includes(`https://swapi-api.alx-tools.com/api/people/${characterId}/`)).length;
-    console.log(count);
-  }
+// Use the 'request' module to perform an HTTP GET request to the constructed URL.
+request(url, function (error, response, body) {
+  // log title if successful, log error if not.
+  console.log(error || JSON.parse(body).title);
 });
+
